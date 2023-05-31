@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  overflow: hidden
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  body {
+    @apply bg-mauve text-white;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-transparent border border-neutral-500 placeholder-neutral-500;
+    @apply py-2 px-4 rounded;
+    @apply focus:outline-none focus:cursor-auto;
+    @apply transition-colors;
+    @apply hover:border-indigo-500;
+    @apply cursor-pointer;
+  }
+
+  option {
+    @apply bg-neutral-700
+  }
+}
+
+@layer components {
+  .popup-modal {
+    @apply center-fixed w-full h-full bg-black bg-opacity-50 flex items-center justify-center
+  }
+}
+
+@layer utilities {
+  .center-fixed {
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
