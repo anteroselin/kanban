@@ -1,0 +1,1 @@
+export default (...values: string[]): boolean => values.every(value => !value.match(/^$/));
