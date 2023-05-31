@@ -15,6 +15,7 @@
       </div>
     </div>
     <div
+      @click="() => (addBoardState = true)"
       class="rounded-2xl bg-savoy p-5 cursor-pointer w-full sm:w-80 h-40 hover:bg-red-400 transition-colors"
       v-else
     >
@@ -30,4 +31,6 @@ import { useKanbanStore } from "~~/stores";
 
 const store = useKanbanStore();
 const { boards } = storeToRefs(store);
+
+const addBoardState = isAddBoardFormOpen();
 </script>

@@ -23,9 +23,10 @@
       </div>
       <div
         class="px-5 py-3 mr-5 flex gap-2 items-center text-savoy cursor-pointer hover:bg-gray-500/20 transition-colors rounded-r-3xl"
+        @click="boardFormState = true"
       >
         <ViewColumnsIcon class="w-5 h-5" />+ Create New Board
-      </div>
+      </div>  
     </aside>
     <slot></slot>
     <FormAddBoard />
@@ -35,6 +36,8 @@
 import { useKanbanStore } from "~~/stores";
 import { ViewColumnsIcon } from "@heroicons/vue/24/outline";
 import { storeToRefs } from "pinia";
+
+const boardFormState = isAddBoardFormOpen();
 
 const store = useKanbanStore();
 
