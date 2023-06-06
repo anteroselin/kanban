@@ -48,8 +48,7 @@
             </select>
           </div>
         </div>
-
-        <ButtonBase
+        <BaseButton
           :label="buttonLabel"
           @action="taskToEditState ? editTaskInfos() : createNewTask()"
           class="bg-savoy"
