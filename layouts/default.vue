@@ -4,7 +4,7 @@
       class="hidden md:block h-full w-96 bg-charcoal border-r border-white border-opacity-10 text-marengo overflow-y-auto"
     >
       <div class="w-full p-5">
-        <NuxtLink to="/" exact-active-class="text-savoy">
+        <NuxtLink to="/" exact-active-class="text-savoy ">
           <div class="flex flex-row gap-2">
             <ChartBarSquareIcon class="w-10 h-10" />
             <h1 class="mb-20">Kanban</h1>
@@ -17,7 +17,7 @@
           v-for="board in boards"
           :key="board.id"
           :to="`/${board.id}`"
-          class="flex gap-2 px-5 py-3 mr-5 items-center hover:bg-red-400 transition-colors rounded-r-3xl font-bold"
+          class="flex gap-2 px-5 py-3 mr-5 items-center hover:bg-blue-400 transition-colors rounded-r-3xl font-bold"
           exact-active-class="bg-savoy"
         >
           <ViewColumnsIcon class="w-5 h-5" />

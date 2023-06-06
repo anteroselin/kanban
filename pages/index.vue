@@ -7,7 +7,7 @@
     >
       <div
         v-for="board in boards"
-        class="rounded-2xl bg-savoy p-5 cursor-pointer w-full h-full hover:bg-red-400 transition-colors"
+        class="rounded-2xl bg-savoy p-5 cursor-pointer w-full h-full hover:bg-blue-400 transition-colors"
         @click="() => $router.push(`/${board.id}`)"
       >
         <ViewColumnsIcon class="w-10 h-10 mb-5" />

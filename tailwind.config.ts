@@ -6,7 +6,7 @@ export default <Partial<Config>>{
         mauve: "#20212C",
         charcoal: "#2B2C37",
         marengo: "#d6d6d6",
-        savoy: "#e63946",
+        savoy: "#2D89EF",
       },
     },
   },
